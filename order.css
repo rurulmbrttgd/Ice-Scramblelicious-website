@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  width: 100%;
+  background-image: url(img/bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+/* nav bar */
+
+.navbar{
+  width: 100%;
+  height: 15vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  width: 150px;
+  cursor: pointer;
+}
+
+.cart{
+  width: 40px;
+  cursor: pointer;
+}
+
+.search{
+  width: 40px;
+  cursor: pointer;
+}
+
+nav{
+  flex: 1;
+  padding-left: 60px;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0px 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:hover{
+  color:#ff77cd;
+}
+
+nav ul li a.active {
+  font-weight: bold;
+  color: #232d60;
+}
+
+
+
+/* end of nav bar */
+
+.number {
+	padding: 0.4em;
+	text-align: center;
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	background-color: seashell;
+	border-radius: 50%;
+}
+
+h1 {
+   font-family: 'Poppins', sans-serif;
+	text-align: center;
+	margin: 1em;
+	font-size: 2.5em;
+	text-shadow: 2px 2px 3px grey;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	background: thistle;
+	margin: 0 auto 2em;
+	border-radius: 1em;
+	padding: 1em 0 1em 1rem;
+}
+
+
+/* name, phone, address and text area */
+
+
+input, 
+textarea {
+  width: 20rem;
+	border: none;
+	padding: 0.5rem 2rem 0.5rem 0.5rem;
+	border-radius: .25em;
+  font-size: 15px;
+}
+
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover {
+	background: seashell;
+	border-bottom: 2px solid pink;
+	outline: none;
+}
+
+#name,
+#phone,
+textarea {
+	margin: .5em 0;
+	box-shadow: 1px 1px 2px grey;
+}
+
+/* Regular and Premium Choices HOVER */
+
+#premium:focus,
+#premium:hover,
+option:focus,
+option:hover {
+	background: seashell;
+	border-bottom: 2px solid pink;
+	outline: none;
+}
+#regulars:focus,
+#regulars:hover,
+option:focus,
+option:hover {
+	background: seashell;
+	border-bottom: 2px solid pink;
+	outline: none;
+}
+
+#regulars{
+  width: 300px;
+  height: 35px;
+  border-radius: .5em;
+  font-size: 15px;
+	box-shadow: 1px 1px 2px grey;
+  padding-left: 0.75rem;
+}
+
+#premium{
+  width: 300px;
+  height: 35px;
+  border-radius: .5em;
+  font-size: 15px;
+	box-shadow: 1px 1px 2px grey;
+  padding-left: 0.75rem;
+}
+
+/* Snacks, Add ons, Payment */
+
+
+input[type="checkbox"],
+input[type="radio"]{
+	margin-right: .5em;
+  margin-left: 1em;
+	width: 1em;
+	height: 1em;
+  padding-left: 3em;
+  font-size: 16px;
+}
+
+input[type="checkbox"], input[type="radio"] + label{
+  font-size: 16px;
+}
+
+#cod{
+  width: 20ch;
+  box-shadow: 1px 1px 2px grey;
+}
+
+fieldset {
+	border: none;
+	margin: .5em;
+}
+
+legend {
+   font-family: 'Poppins', sans-serif;
+	font-size: 1.4em;
+	font-weight: bold;
+	padding-bottom: .5em;
+}
+
+label,
+.button {
+   font-family: 'Poppins', sans-serif;
+}
+
+.button {
+	box-shadow: 1px 1px 3px black;
+	border: none;
+	background-color: #DFDBE5;
+	font-size: 1em;
+	align-self: center;
+ padding: .7em;
+	color: black;
+}
+
+.button:hover {
+	cursor: pointer;
+	background: radial-gradient(white, pink);
+	color: black;
+	box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+.order {
+	display: none;
+	text-align: center;
+}
+
+img{
+  width: 35px;
+  justify-content: center;
+}
+
+
+@media (min-width: 550px) {
+	form {
+		max-width: 50%;
+	}
+}
+
+/* ------ Footer------- */
+
+footer{
+  width: 100%;
+  padding: 30px 0 0 20px;
+  background:#fbdae8;
+}
+
+footer .footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer .footer .footer_tag{
+  text-align: center;
+}
+
+footer .footer .footer_tag h2{
+  color: #9b6f87;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+footer .footer .footer_tag p{
+  margin: 8px 0;
+  color: #c18aa8;
+  cursor: pointer;
+}
+
+footer .footer .footer_tag i{
+  margin: 0 5px;
+  cursor: pointer;
+  color:  #9e0054;
+}
+
+.footer__info{
+  margin-top: 1.5rem;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  text-align: center;
+}
+
+.footer__card{
+  column-gap: 1rem;
+  justify-content: center;
+}
+
+.footer__card img{
+  width: 35px;
+}
+.footer_copy{
+  text-align: center;
+  font-size: small;
+  color:  #9e0054;
+}
+/* ============FOOTER-END========== */
+
+

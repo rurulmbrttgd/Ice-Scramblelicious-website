@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Order</title>
+  <link href="order.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="path/to/font-awesome/icons">
+  <link rel="shortcut icon" type="x-icon" href="img/logo.png" </head>
+</head>
+
+<body>
+  <div class="bg">
+    <div class="navbar">
+      <img src="img/logo.png" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="review.html">Reviews</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <img src="img/atc.png" class="cart">
+      <img src="img/search.png" class="search">
+    </div>
+
+    <div class="main">
+      <h1>Place Your Order Here!</h1>
+      <form action="javascript:void(0);">
+        <fieldset>
+          <legend>
+            <div class="number">1</div> Your Info:
+          </legend>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="user_name"><br>
+          <label for="phone">Phone:</label><br>
+          <input type="tel" id="phone" name="user_tel"><br>
+          <label for="address">Address:</label><br>
+          <textarea></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <div class="number">2</div> Regulars Choice:
+          </legend>
+          <select id="regulars" name="regular-scramble">
+            <option value="" selected>None</option>
+            <option value="">Classic Ice Scramble</option>
+            <option value="">Caramel Ice Scramble</option>
+            <option value="">Milky Ice Scramble</option>
+            <option value="">Mixed with Ube Ice Scramble</option>
+            <option value="">Strawberry Ice Scramble</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <div class="number">3</div> Premium Choice:
+          </legend>
+          <select id="premium" name="premium-scramble">
+            <option value="" selected>None</option>
+            <option value="">Ultimate Ube Ice Scramble</option>
+            <option value="">Unicor Ice Scramble</option>
+            <option value="">Milky Melon Ice Scramble</option>
+            <option value="">Oreo Overload Ice Scramble</option>
+            <option value="">Classic Overload Ice Scramble</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <div class="number">4</div> Your Snacks:
+          </legend>
+          <table>
+            <tr>
+              <td><input type="checkbox" id="" name=""><label>Japanese Siomai</label><br>
+              <td><input type="checkbox" id="" name=""><label>Shawarma Fries</label></br>
+              <td><input type="checkbox" id="" name=""><label>Shawarma Nachos</label></br>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="" name=""><label>Mac & Cheese + Fries</label></br>
+              <td><input type="checkbox" id="" name=""><label>Baked Mac + Fries</label></br>
+              <td><input type="checkbox" id="" name=""><label>Ham & Egg Drop Sandwich</label></br>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="" name=""><label>Bacon & Egg Drop Sandwich</label></br>
+              <td><input type="checkbox" id="" name=""><label>Street Food Package</label></br>
+            </tr>
+          </table>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <div class="number">5</div> Extra Add-ons:
+          </legend>
+          <table>
+            <tr>
+              <td><input type="checkbox" id="" name=""><label>Milk</label><br>
+              <td><input type="checkbox" id="" name=""><label>Mallows</label></br>
+              <td><input type="checkbox" id="" name=""><label>Sprinkles</label></br>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="" name=""><label>Oreo</label></br>
+              <td><input type="checkbox" id="" name=""><label>Pinipig</label></br>
+              <td><input type="checkbox" id="" name=""><label>Choco Chips </label></br>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="" name=""><label>Strawberry Syrup </label></br>
+              <td><input type="checkbox" id="" name=""><label>Choco Syrup </label></br>
+            </tr>
+          </table>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <div class="number">6</div> Payment:
+          </legend>
+            <input type="radio" id="Gcash" name="options" value="Gcash"><img src="assets/1.png" alt="">
+            <label for="Gcash">Gcash
+          </label><br>
+            <input type="radio" id="Paymaya" name="options" value="Paymaya"><img src="assets/2.png" alt="">
+            <label for="Paymaya">Paymaya
+          </label><br>
+            <input type="radio" id="Visa" name="options" value="Visa"><img src="assets/3.png" alt="">
+            <label for="Visa">Visa
+          </label><br>
+            <input type="radio" id="Mastercard" name="options" value="Mastercard"><img src="assets/4.png" alt="">
+            <label for="Mastercard">Mastercard
+          </label><br>
+            <input type="radio" id="Cash On Delivery" name="options" value="Cash On Delivery">
+            <label for="Cash On Delivery">Cash On Delivery <input type="textbox" id="cod" name="cash" value="">
+          </label><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <div class="number">7</div> Any Note/Requests:
+          </legend>
+          <textarea></textarea>
+        </fieldset>
+        <input class="button" type="submit" value="Order!">
+      </form>
+    </div>
+  </div>
+
+  <!--====== Footer ======-->
+  <footer>
+    <div class="footer">
+      <div class="footer_tag">
+        <h2>Location</h2>
+        <p>Sta Mesa, Manila</p>
+        <p>Cabuyao, Laguna</p>
+        <p>Tanauan, Batangas</p>
+        <p>Silang, Cavite</p>
+
+      </div>
+
+      <div class="footer_tag">
+        <h2>Quick Link</h2>
+        <p>Home</p>
+        <p>About</p>
+        <p>Menu</p>
+        <p>Gallery</p>
+
+      </div>
+
+      <div class="footer_tag">
+        <h2>Contact</h2>
+        <p>+639090633745</p>
+        <p>+639150638743</p>
+        <p>icescramblelicious@gmail.com</p>
+        <p>icescramblelicioussanisidro@gmail.com</p>
+      </div>
+
+      <div class="footer_tag">
+        <h2>Our Service</h2>
+        <p>Fast Delivery</p>
+        <p>Cash on Delivery</p>
+        <p>Online Payment</p>
+        <p>Bank Transfer</p>
+      </div>
+
+    </div>
+
+    <div class="footer__info">
+      <div class="footer__card">
+        <img src="assets/1.png" alt="footer image">
+        <img src="assets/2.png" alt="footer image">
+        <img src="assets/3.png" alt="footer image">
+        <img src="assets/4.png" alt="footer image">
+      </div>
+
+      <span class="footer_copy">
+        &#169; Copyright Weebdev 2023. All rights reserved.
+      </span>
+    </div>
+  </footer>
+</body>
+
+</html>
